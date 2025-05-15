@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +97,18 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold;
+  }
+}
+
+.section-padding {
+  @apply py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8;
+}
+
+.hero-gradient {
+  background: linear-gradient(90deg, rgba(12,75,147,0.95) 0%, rgba(10,135,84,0.95) 100%);
 }
